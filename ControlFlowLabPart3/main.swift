@@ -173,7 +173,14 @@ var TargetHR = 100
 let isInTarget = (currentHR == TargetHR)
 let isBelowTarget = (currentHR < TargetHR)
 let isAboveTarget = (currentHR > TargetHR)
-
-
+if (isInTarget) {
+    print("You're right on track!")
+}
+else if (isBelowTarget) {
+    print("You're doing great, but try to push it a bit!")
+}
+else if (isAboveTarget) {
+    print("You're on fire! Slow it down just a bit.")
+}
 //Once you complete the coding, test and run the code with various values for currentHR to see if all the coding works. If all the coding works, check your work and see if it shows in the console. Then you are done! Push it up to GitHub.
 print("\n")
